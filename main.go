@@ -2,7 +2,7 @@ package prettyfie
 
 import "encoding/json"
 
-func This(data interface{}) string {
+func Pretty(data interface{}) string {
 	pretty, _ := json.MarshalIndent(data, " ", "  ")
 	return string(pretty)
 }
